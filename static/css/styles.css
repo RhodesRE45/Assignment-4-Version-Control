@@ -1,0 +1,62 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("background.jpg"); /* Show background picture put it in right place*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 50%; /*Sets the style of the main content area in the page*/
+    color: #eeeeee;
+    z-index: 2;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    text-align: center;
+    background-color: rgba(0.7, 0.7, 0.7, 0.5);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* Navigation bar style */
+nav a {
+    color: rgb(210, 219, 255); /* The link color is white */
+    text-decoration: none; /* Remove underline */
+}
+
+form {
+    text-align: left;
+}
+
+/*Adjust text box*/
+form ul li label {
+    display: inline-block;
+    width: 200px;
+}
+
+form ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+form ul li ul li {
+    display: inline-flex;
+    align-items: start;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #02026c; /* The background color darkens when the mouse hovers */
+}

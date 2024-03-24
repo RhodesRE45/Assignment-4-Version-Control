@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Submit Your Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="image"></div>
+    <div class="main">
+        <h1>Submit Your Data</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Return to main page</a></li>
+            </ul>
+        </nav>
+        <form action="/submit_data" method="post">
+            <ul class="form">
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="example:James Corden">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example:bxxxxxxx@gmail.com">
+                </li>
+
+                <li>
+                    <label for="student_id">Student ID:</label>
+                    <input type="text" id="student_id" name="student_id" required placeholder="example:Pxxxxxxx">
+                </li>
+
+                </ul>
+                <p>Overall satisfaction with academic experience:</p>
+                <ul class="choices">
+                    <li>
+                        <label
+                            ><input type="radio" name="question0" value="Very dissatisfied" /><span
+                                >Very dissatisfied</span
+                            ></label
+                        >
+                    </li>
+                    <li>
+                        <label
+                            ><input type="radio" name="question0" value="dissatisfy" /><span
+                                >dissatisfy</span
+                            ></label
+                        >
+                    </li>
+                    <li>
+                        <label
+                            ><input type="radio" name="question0" value="satisfaction" /><span
+                                >satisfaction</span
+                            ></label
+                        >
+                    </li>
+                    <li>
+                        <label
+                            ><input type="radio" name="question0" value="Very satisfied" /><span
+                                >Very satisfied</span
+                            ></label
+                        >
+                    </li>
+                </ul>
+                    <label for="suggestions">Suggestions:</label>
+                    <textarea id="suggestions" name="suggestions"></textarea>
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
